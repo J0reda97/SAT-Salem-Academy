@@ -1,0 +1,220 @@
+:root {
+    --main-color: #54bbff
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-heading {
+    font-weight: 500;
+    position: relative;
+}
+
+.main-heading::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: black;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* navbar */
+
+.navbar {
+    background-color: black;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+    font-size: 20px;
+    color: white !important;
+}
+
+.navbar .active,
+.navbar .nav-link:hover,
+.navbar .active .nav-link {
+    color: var(--main-color) !important;
+}
+
+.navbar form input[type="search"] {
+    width: 200px;
+}
+
+.navbar .dropdown .dropdown-menu {
+    background-color: black;
+}
+
+.navbar .dropdown .dropdown-menu .dropdown-item {
+    color: white;
+    transition: 0.5s;
+}
+
+.navbar .dropdown .dropdown-menu .dropdown-item.active,
+.navbar .dropdown .dropdown-menu .dropdown-item:hover {
+    color: var(--main-color);
+    background-color: black;
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    outline: 1px white solid;
+}
+
+
+/* header */
+
+header {
+    background-image: url('../img/back.png');
+}
+
+header .main-btn {
+    color: white;
+    transition: 0.5s;
+    padding: 1.5rem;
+    font-size: 20px;
+    background-color: var(--main-color);
+}
+
+header .main-btn:focus {
+    box-shadow: none;
+}
+
+@media (max-width:767px) {
+    header .main-btn {
+        padding: 1rem;
+        font-size: 18px;
+    }
+
+}
+
+header .main-btn:hover {
+    background-color: black;
+}
+
+header li {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+header p,
+header li p {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width:767px) {
+    header p {
+        font-size: 1rem;
+    }
+}
+
+header li a {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+header li a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+header li span {
+    color: red;
+    text-transform: uppercase;
+}
+
+/* header li span.active {
+    color: var(--main-color);
+} */
+
+@media (max-width:767px) {
+
+    header li {
+        font-size: 1.25rem;
+    }
+
+}
+
+section {
+    height: 40vh;
+    background-color: var(--main-color);
+}
+
+section span {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    background-color: white;
+}
+
+section span:hover {
+    color: white;
+    background-color: #F04848;
+}
+
+section span i {
+    font-size: 25px;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+
+/* login */
+
+.card {
+    background-color: transparent;
+    margin: auto;
+    border: none
+}
+
+.card a {
+    color: var(--main-color);
+}
+
+header .btn {
+    border: none;
+    color: white !important;
+    transition: 0.5s;
+    background-color: var(--main-color);
+}
+
+header .btn:hover {
+    background-color: black;
+}
+
+header p.main-heading::after {
+    bottom: -25px;
+}
+
+header .links li {
+    line-height: 1;
+}
+
+header .links a {
+    font-size: 1.25rem;
+}
