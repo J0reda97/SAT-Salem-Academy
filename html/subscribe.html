@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/FAV.png" type="image/x-icon">
+    <title>Salem Academy</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-uppercase" href="../index.html">Salem Academy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Videos
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" role="menu">
+                            <a class="dropdown-item" href="sat.html" role="menuitem">SAT</a>
+                            <a class="dropdown-item" href="digital.html" role="menuitem">Digital SAT</a>
+                            <a class="dropdown-item" href="psat.html" role="menuitem">PSAT</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="blog.html" aria-label="Blog">Blog</a>
+                    </li>
+
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" role="menu">
+                            <a class="dropdown-item" href="contact.html" role="menuitem">Contact Us</a>
+                            <a class="dropdown-item" href="test.html" role="menuitem">Testimonials</a>
+                            <a class="dropdown-item" href="about.html" role="menuitem">About Me</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- header -->
+
+    <header class="pb-md-5">
+        <div class="container pb-5 text-center">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent pb-5">
+                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="signup.php">Improve your SAT Math Score</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Subscribe</li>
+                </ol>
+            </nav>
+            <h2 class="main-heading mb-5 font-weight-normal">Subscribe</h2>
+            <p class="mb-2 pt-5 fs-4">Already have an account? <a id="login-toggler">Login</a> to purchase.</p>
+            <aside class="col-sm-8 col-lg-6 m-auto" id="login-div">
+                <div class="card">
+                    <article class="card-body">
+                        <form method="POST" action="includes/login.inc.php">
+                            <div class="form-group">
+                                <label for="login-username">Your email or username</label>
+                                <input id="login-username" name="uid" class="form-control"
+                                    placeholder="Email or username" type="text" autocomplete="username">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="login-password">Your password</label>
+                                <input id="login-password" name="password" class="form-control" placeholder="********"
+                                    type="password" autocomplete="current-password">
+                            </div>
+
+                            <div class="form-group">
+                                <a class="float-left" href="#">Forgot password?</a>
+                                <div class="checkbox float-right">
+                                    <label>
+                                        <input type="checkbox" name="remember-me" autocomplete="on"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-block" name="submit"> Login </button>
+                            </div>
+                        </form>
+                    </article>
+                </div> <!-- card.// -->
+            </aside> <!-- col.// -->
+            <!--Section: Contact v.2-->
+            <section class="bg-transparent m-auto pt-5">
+                <div class="row justify-content-center">
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 ">
+                        <form id="contact-form" name="contact-form" action="includes/signup.inc.php" method="POST">
+                            <!--Grid row-->
+                            <h3 class="text-left mb-3">1. Create Your Account</h3>
+                            <div class="row my-2">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <label for="username" class="">username</label>
+                                        <input type="text" id="username" name="uid" class="form-control"
+                                            autocomplete="username">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+                            <!--Grid row-->
+                            <div class="row my-2">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <label for="email" class="">Email</label>
+                                        <input type="email" id="email" name="email" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+                            <!--Grid row-->
+                            <div class="row my-2">
+                                <!--Grid column-->
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <label for="password" class="">Password</label>
+                                        <input type="password" id="password" name="password" class="form-control"
+                                            autocomplete="new-password">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+                            <!--Grid row-->
+                            <div class="row mt-2 mb-5">
+                                <!--Grid column-->
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <label for="repassword" class="">Re-enter Password</label>
+                                        <input type="password" id="repassword" name="repassword" class="form-control"
+                                            autocomplete="new-password">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+                            <div class="text-left payment mb-5">
+                                <h3 class="mb-3">2. Choose Payment Method</h3>
+                                <div class="form-check d-flex align-items-center position-relative">
+                                    <input class="form-check-input" type="radio" name="payment" id="paypal"
+                                        value="paypal" checked>
+                                    <label class="form-check-label" for="paypal">
+                                        <i class="fa-brands fa-cc-paypal"></i> Paypal account
+                                    </label>
+                                </div>
+                                <div class="form-check  d-flex align-items-center position-relative">
+                                    <input class="form-check-input" type="radio" name="payment" id="cardchk"
+                                        value="card">
+                                    <label class="form-check-label" for="cardchk">
+                                        <i class="fa-brands fa-cc-visa"></i> Credit Card
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="text-left" id="creditcard">
+                                <h3 class="mb-3">3. Enter Credit Card Information</h3>
+                                <div class="row my-2">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <label for="cardname" class="">Name on Card</label>
+                                            <input type="text" id="cardname" name="cardname" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <label for="cardnumber" class="">Card Number</label>
+                                            <input type="text" id="cardnumber" name="cardnumber" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <!--Grid column-->
+                                    <label class="mr-sm-2 col-md-12" for="expiration-month">Expiration Date:</label>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <select class="form-select" id="expiration-month">
+                                                <option selected>Month...</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <select class="form-select" id="expiration-year">
+                                                <option selected>Year...</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                                <option value="2026">2026</option>
+                                                <option value="2027">2027</option>
+                                                <option value="2028">2028</option>
+                                                <option value="2029">2029</option>
+                                                <option value="2030">2030</option>
+                                                <option value="2031">2031</option>
+                                                <option value="2032">2032</option>
+                                                <option value="2033">2033</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                </div>
+                                <div class="row my-2 text-left">
+                                    <!--Grid column-->
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <label for="security" class="">security code</label>
+                                            <input type="security" id="security" name="security" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center text-md-start my-5">
+                                <button name="submit" type="submit"
+                                    class="btn btn-primary btn-block w-100">Send</button>
+                            </div>
+                        </form>
+                        <div class="status"></div>
+                    </div>
+                    <!--Grid column-->
+                </div>
+
+            </section>
+            <!--Section: Contact v.2-->
+        </div>
+    </header>
+
+    <!-- socail -->
+
+    <section class="social d-flex justify-content-center align-items-center gap-25">
+        <span class="d-block mx-2 rounded-circle"><i class="fa-regular fa-envelope"></i></span>
+        <span class="d-block mx-2 rounded-circle"><i class="fa-brands fa-facebook-f"></i></span>
+        <span class="d-block mx-2 rounded-circle"><i class="fa-brands fa-twitter"></i></span>
+        <span class="d-block mx-2 rounded-circle"><i class="fa-brands fa-youtube"></i></span>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5">
+        <div class="container">
+            <p>&copy; 2023, [M. Salem, QUANTUM EDUCATION INC.]. ALL RIGHTS RESERVED. SAT® IS A REGISTERED TRADEMARK OF
+                THE
+                COLLEGE BOARD™.
+                THE COLLEGE BOARD DOES NOT ENDORSE, NOR IS IT AFFILIATED IN ANY WAY WITH THE OWNER OR ANY CONTENT OF
+                THIS
+                WEB SITE.</p>
+        </div>
+    </footer>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/ffb45ac8d1.js" crossorigin="anonymous"></script>
+    <!-- bootatrap js -->
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

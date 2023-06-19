@@ -108,7 +108,7 @@ header li {
 header p,
 header li p {
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -121,11 +121,11 @@ header li p {
 
 header li a {
     color: var(--main-color);
+    text-decoration: none;
     font-weight: 500;
 }
 
 header li a:hover {
-    text-decoration: none;
     color: black;
 }
 
@@ -134,9 +134,6 @@ header li span {
     text-transform: uppercase;
 }
 
-/* header li span.active {
-    color: var(--main-color);
-} */
 
 @media (max-width:767px) {
 
@@ -146,12 +143,12 @@ header li span {
 
 }
 
-section {
+section.social {
     height: 40vh;
     background-color: var(--main-color);
 }
 
-section span {
+section.social span {
     height: 50px;
     width: 50px;
     text-align: center;
@@ -162,12 +159,12 @@ section span {
     background-color: white;
 }
 
-section span:hover {
+section.social span:hover {
     color: white;
     background-color: #F04848;
 }
 
-section span i {
+section.social span i {
     font-size: 25px;
 }
 
@@ -217,4 +214,40 @@ header .links li {
 
 header .links a {
     font-size: 1.25rem;
+}
+
+header .price {
+    font-size: 25px;
+}
+
+header .list li {
+    font-size: 18px;
+    text-align: left;
+}
+
+header .list li span {
+    color: black;
+}
+
+header #login-toggler {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+
+header #login-div {
+    height: 0;
+    overflow: hidden;
+}
+
+header .payment {
+    font-size: 20px;
+}
+
+header .form-check-input[type=radio] {
+    width: 0.75em;
+    height: 0.75em;
+    position: absolute;
+    top: 33%;
+    transform: translatey(-50%);
 }
